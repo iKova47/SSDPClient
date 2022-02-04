@@ -6,7 +6,7 @@ import Socket
 // MARK: Protocols
 
 /// Delegate for service discovery
-public protocol SSDPDiscoveryDelegate {
+public protocol SSDPDiscoveryDelegate: AnyObject {
     /// Tells the delegate a requested service has been discovered.
     func ssdpDiscovery(_ discovery: SSDPDiscovery, didDiscoverService service: SSDPService)
 
